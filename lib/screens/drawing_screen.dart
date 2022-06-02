@@ -26,9 +26,7 @@ class _DrawingScreenState extends State<DrawingScreen> {
               _points=List.from(_points)..add(localPosition);
             });
           },
-          onPanEnd: (DragEndDetails details){
-            _points.add(null as Offset);
-          },
+          
           child: CustomPaint(
             painter: Painting(points: _points),
             size: Size.infinite,
