@@ -35,6 +35,16 @@ class _DrawingScreenState extends State<DrawingScreen> {
           ),
         ),
       ),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(onPressed: (){
+            _points.clear();
+          },
+          child: Icon(Icons.clear_all),
+          ),
+        ],
+      ),
     );
   }
 }
