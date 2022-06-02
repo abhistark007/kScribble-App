@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 
 
 class Painting extends CustomPainter{
+  final Color color;
   final List<Offset> points;
   Painting({
-    required this.points
+    required this.points,
+    required this.color,
   });
 
 
   @override
   void paint(Canvas canvas, Size size) {
     Paint paint =Paint()
-    ..color=Colors.black
+    ..color=color
     ..strokeCap=StrokeCap.round
     ..strokeWidth=5.0;
 
