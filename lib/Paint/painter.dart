@@ -18,7 +18,7 @@ class Painting extends CustomPainter{
 
     for(int i=0;i<points.length-1;i++){
       // ignore: unnecessary_null_comparison
-      if(points[i]!=null && points[i+1]!=null){
+      if(points[i]!=null && points[i+1]!=null && points[i]!=Offset.infinite){
         canvas.drawLine(points[i], points[i+1], paint);
       }
     }
